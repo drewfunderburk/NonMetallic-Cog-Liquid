@@ -12,7 +12,7 @@ namespace MathForGames
 
         public Scene()
         {
-
+            _actors = new Actor[0];
         }
 
         public void AddActor(Actor actor)
@@ -22,7 +22,7 @@ namespace MathForGames
             //Copy the values from the old array to the new array
             for (int i = 0; i < _actors.Length; i++)
             {
-                 appendedArray[i] = _actors[i];
+                appendedArray[i] = _actors[i];
             }
             //Set the last value in the new array to be the actor we want to add
             appendedArray[_actors.Length] = actor;
